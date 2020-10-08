@@ -36,7 +36,8 @@ main {
 
 /* line 28, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section {
-  border: 1px solid;
+  border: 1px solid #6969ff;
+  border-radius: 3px;
   padding: 20px;
   width: 350px;
   height: 400px;
@@ -46,14 +47,14 @@ main section {
   align-items: center;
 }
 
-/* line 38, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 39, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section .login-text h1 {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 800;
 }
 
-/* line 44, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 45, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form {
   width: 100%;
   display: flex;
@@ -61,23 +62,59 @@ main section form {
   justify-content: space-between;
 }
 
-/* line 49, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 50, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form input {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 3px;
+  border: none;
 }
 
-/* line 55, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 58, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form input[type='text'] {
+  font-weight: 600;
+  color: #403868;
+  margin-top: 10px;
+  background: var(--text-input-background-color);
+}
+
+/* line 64, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form input[type='text']:focus {
+  background: #e6e6e6;
+}
+
+/* line 68, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form .user-pass {
   display: flex;
   flex-direction: column;
 }
 
-/* line 59, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 72, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form > * {
-  margin-top: 10px;
+  margin-top: 15px;
+}
+
+/* line 75, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form input[type='submit'] {
+  margin-top: 30px;
+  background: #807ffe;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 82, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form input[type='submit']:hover {
+  background: #7373ff;
+}
+
+/* line 85, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

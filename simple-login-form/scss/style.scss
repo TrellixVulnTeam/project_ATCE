@@ -26,7 +26,8 @@ main {
   justify-content: center;
   align-items: center;
   section {
-    border: 1px solid;
+    border: 1px solid #6969ff;
+    border-radius: 3px;
     padding: 20px;
     width: 350px;
     height: 400px;
@@ -47,19 +48,44 @@ main {
       flex-direction: column;
       justify-content: space-between;
       input {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         padding-left: 20px;
         padding-right: 20px;
+        border-radius: 3px;
+        border: none;
       }
+      input[type='text'] {
+        font-weight: 600;
+        color: #403868;
+        margin-top: 10px;
+        background: var(--text-input-background-color);
+      }
+      input[type='text']:focus {
+        background: #e6e6e6;
+      }
+
       .user-pass {
         display: flex;
         flex-direction: column;
       }
       > * {
-        margin-top: 10px;
+        margin-top: 15px;
       }
-      input {
+      input[type='submit'] {
+        margin-top: 30px;
+        background: #807ffe;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+      }
+      input[type='submit']:hover {
+        background: #7373ff;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
