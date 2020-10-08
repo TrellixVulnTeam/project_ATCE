@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* line 1, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+html {
+  --tetx-clr: #403868;
+  --primary-clr: #807ffe;
+  --text-input-background-color: #e6e6e6;
+  height: 100%;
+}
+
+/* line 8, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--tetx-clr);
+}
+
+/* line 15, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 19, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+body {
+  height: 100%;
+}
+
+/* line 23, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 28, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section {
+  border: 1px solid;
+  padding: 20px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* line 38, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section .login-text h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* line 44, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 49, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 55, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form .user-pass {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 59, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+main section form > * {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
