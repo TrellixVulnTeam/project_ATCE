@@ -102,15 +102,16 @@ main section form input[type='submit'] {
   background: #807ffe;
   font-weight: 600;
   color: #fff;
+  transition: all 1s ease 0s;
   cursor: pointer;
 }
 
-/* line 82, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 83, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form input[type='submit']:hover {
   background: #7373ff;
 }
 
-/* line 85, ../../../Google Диск/project/simple-login-form/scss/style.scss */
+/* line 86, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form div:nth-child(2) {
   width: 100%;
   display: flex;
