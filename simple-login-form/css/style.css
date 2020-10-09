@@ -2,7 +2,7 @@
 /* line 1, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 html {
   --tetx-clr: #403868;
-  --primary-clr: #807ffe;
+  --primary-clr: #4848fa;
   --text-input-background-color: #e6e6e6;
   height: 100%;
 }
@@ -108,7 +108,7 @@ main section form input[type='submit'] {
 
 /* line 83, ../../../Google Диск/project/simple-login-form/scss/style.scss */
 main section form input[type='submit']:hover {
-  background: #7373ff;
+  background: #4848fa;
 }
 
 /* line 86, ../../../Google Диск/project/simple-login-form/scss/style.scss */
