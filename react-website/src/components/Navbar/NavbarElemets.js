@@ -99,13 +99,14 @@ background: #01bf71;
 white-space: nowrap;
 padding: 10px 22px;
 color: #010606;
+font-weight:600;
 font-size: 16px;
 outline: none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
-text-decoration: none
-&hover{
+text-decoration: none;
+&:hover{
 	transition: all .2s easy-in-out;
 	background: #fff;
 	color: #010606;
