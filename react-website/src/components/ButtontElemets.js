@@ -17,7 +17,7 @@ align-items: center;
 transition: all .2s ease-in-out;
 
 
-&::hover{
+&:hover{
     transition: all .2s ease-in-out;
     background: ${({ primary }) => (primary ? '#fff' : '#01BF71')};
 
