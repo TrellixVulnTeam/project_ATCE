@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const InfoContaoner = styled.div`
+export const InfoContainer = styled.div`
 	color: #fff;
-	background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '010606')};
+	background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
 	@media screen and (max-width: 768px) {
 		paddin: 100px 0;
@@ -28,7 +28,7 @@ export const InfoRow = styled.div`
 	grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
 	@media screen and (max-width: 768px) {
-		grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' col2` : `'col1 col1' 'col2 col2`)};
+		grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' col2` : `'col1 col1' 'col2 col2'`)};
 	}
 `;
 

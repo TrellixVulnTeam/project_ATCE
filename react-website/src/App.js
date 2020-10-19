@@ -7,11 +7,11 @@ import Sidebar from './components/Sidebar';
 import Home from './pages';
 
 function App() {
-	return (
-		<Router>
-			<Home />
-		</Router>
-	);
+  return (
+    <Router>
+      <Home />
+    </Router>
+  );
 }
 
 export default App;
