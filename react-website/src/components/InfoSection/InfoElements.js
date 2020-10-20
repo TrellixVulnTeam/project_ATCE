@@ -19,16 +19,32 @@ export const InfoWrapper = styled.div`
 	margin-left: auto;
 	padding: 0 24px;
 	justify-content: center;
+	padding-bottom: 110px;
 `;
 
 export const InfoRow = styled.div`
 	display: grid;
 	grid-auto-columns: minmax(auto, 1fr);
 	align-items: center;
-	grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+	grid-template-areas: ${({ imgStart }) =>
+    imgStart
+      ? `
+'col2 col1'
+`
+      : `
+'col1 col2'
+`};
 
 	@media screen and (max-width: 768px) {
-		grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' col2` : `'col1 col1' 'col2 col2'`)};
+		grid-template-areas: ${({ imgStart }) =>
+    imgStart
+      ? `
+'col1 col2'
+`
+      : `
+'col1 col1'
+'col2 col2'
+`};
 	}
 `;
 
@@ -46,7 +62,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
 	max-width: 540px;
-	padding-top: 0px;
+	padding-top: 0;
 	padding-bottom: 60px;
 `;
 
