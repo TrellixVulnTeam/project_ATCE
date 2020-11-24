@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+.quiz {
+	margin: 0 auto;
+	width: 600px;
+}
+.quiz-questions,
+.quiz-indicator,
+.quiz-results {
+	margin-bottom: 20px;
+}
+
+.quiz-question-item,
+.quiz-result-item {
+	&__question {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	&__answer {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+.quiz-indicator {
+	margin-bottom: 20px;
+}
+.btn-next {
+}
+.btn-restart {
+	display: none;
+}
