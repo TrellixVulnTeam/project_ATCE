@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  background-color: #e8e8e8;
+  color: #222831;
+}
+
+button {
+  width: auto;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #f05454;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 0.5s all ease-in-out;
+}
+button:hover {
+  background-color: #30475e;
+  transition: 0.5s all ease-in-out;
 }
 
 .quiz {
@@ -17,6 +39,10 @@ body {
   margin-bottom: 20px;
 }
 
+.quiz-question-item,
+.quiz-result-item {
+  margin-bottom: 20px;
+}
 .quiz-question-item__question,
 .quiz-result-item__question {
   font-size: 20px;
@@ -33,6 +59,29 @@ body {
   margin-bottom: 20px;
 }
 
+.quiz-results {
+  display: none;
+}
+
 .btn-restart {
   display: none;
+}
+
+.question--hidden,
+.indicator--hidden,
+.btn-next--hidden {
+  display: none;
+}
+
+.result--visible,
+.btn-restart--visible {
+  display: block;
+}
+
+.answer--invalid {
+  color: red;
+}
+
+.answer--valid {
+  color: green;
 }
