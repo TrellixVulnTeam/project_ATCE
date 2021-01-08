@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+    <div class="quiz" id="quiz">
+        <div class="header">
+            <div class="quiz-questions" id="questions" data-current-step='0'></div>
+
+            <div class="quiz-indicator" id="indicator"></div>
+        </div>
+
+
+        <div class="quiz-results" id="results">
+            <div class="quiz-result-item">
+                <div class="quiz-result-item__question">Question 1</div>
+                <ul class="quiz-result-item__answer">
+                    <li>
+                        Answer 1
+                    </li>
+                    <li>
+                        Answer 2
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="quiz-controls">
+            <button class="btn-next" id="btn-next" disabled>Next</button>
+            <button class="btn-restart" id="btn-restart">Refresh</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>

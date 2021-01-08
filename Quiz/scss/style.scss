@@ -6,7 +6,8 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
-	background-color: #e8e8e8;
+	// background-color: #e8e8e8;
+	background-color: red;
 	color: #222831;
 }
 button {
@@ -21,6 +22,7 @@ button {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 3px;
+	border-radius: 7px;
 	transition: 0.5s all ease-in-out;
 	&:hover {
 		background-color: #30475e;
@@ -31,6 +33,10 @@ button {
 .quiz {
 	margin: 0 auto;
 	width: 600px;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .quiz-questions,
 .quiz-indicator,
@@ -40,6 +46,7 @@ button {
 
 .quiz-question-item,
 .quiz-result-item {
+	transition: 0.5s all ease-in-out;
 	margin-bottom: 20px;
 	&__question {
 		font-size: 20px;
@@ -49,6 +56,10 @@ button {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		& li:hover {
+			transition: 0.5s all ease-in-out;
+			text-shadow: 1px 2px 1px #474747;
+		}
 	}
 }
 .quiz-indicator {
