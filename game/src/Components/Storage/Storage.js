@@ -7,15 +7,20 @@ function Storage(props) {
 		}).title
 	}
 	return (
-		< >
-			{props.storage.map((item) => {
-				return (
-					<span>
-						{item.id}. { findGoodById(item.id)} - {item.qty} шт.
-					</span>
-				)
-			})}
-		</>
+		<div>
+			<h2 className='title'>Склад</h2>
+
+			<div>
+				{props.storage.map((item) => {
+					return (
+						<span>
+							{item.id}. { findGoodById(item.id)} - {item.qty} шт.
+						</span>
+					)
+				})}</div>
+
+
+		</div>
 	);
 }
 

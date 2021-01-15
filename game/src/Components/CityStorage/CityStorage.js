@@ -3,7 +3,7 @@ import './CityStorage.css';
 function CityStorage() {
 	return (
 		<div>
-			Городской склад
+			<h2 сlassname='title'>Городской склад</h2>
 		</div>
 	);
 }

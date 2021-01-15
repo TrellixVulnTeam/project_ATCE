@@ -1,11 +1,18 @@
 .app {
 	// display: flex;
 	margin: 0 auto;
-	height: 200px;
+	height: auto;
 	width: 800px;
 	background-color: #665858;
 }
 .app-name {
-	color: #fff;
+	color: #a68156;
 	text-align: center;
+}
+.content {
+	display: flex;
+	flex-basis: 50%;
+}
+.column {
+	// background-color: red;
 }
