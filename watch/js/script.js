@@ -19,7 +19,7 @@ function updateTime() {
 
 	let month = d.getMonth();
 	if (month >= 0 && month <= 9) month = '0' + month;
-
+	console.log(month);
 	let year = d.getFullYear();
 	if (year >= 0 && year <= 9) year = '0' + year;
 
@@ -61,5 +61,5 @@ function updateTime() {
 }
 
 window.onload = function() {
-	setInterval(updateTime, 1000);
+	setInterval(updateTime, 10000);
 };
