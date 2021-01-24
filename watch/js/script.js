@@ -17,9 +17,10 @@ function updateTime() {
 	let date = d.getDate();
 	if (date >= 0 && date <= 9) date = '0' + date;
 
-	let month = d.getMonth();
+	let monthArray = [ (monthArray[0] = 'January'), (monthArray[1] = 'February'), (monthArray[2] = 'March') ];
 	if (month >= 0 && month <= 9) month = '0' + month;
 	console.log(month);
+
 	let year = d.getFullYear();
 	if (year >= 0 && year <= 9) year = '0' + year;
 
