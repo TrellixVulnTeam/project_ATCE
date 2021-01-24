@@ -1,6 +1,6 @@
-// const express = requier('../express')
+const express = requier('express')
 const config = requier('config')
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 
 const app = express()
 
