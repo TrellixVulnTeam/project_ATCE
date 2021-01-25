@@ -1,4 +1,5 @@
 {
 	"port": 5000,
-	"mongoUri": "mongodb+srv://oino:Mwivti2ccq!@cluster0.h2eaj.mongodb.net/app?retryWrites=true&w=majority"
+	"jwtSecret": "mernreactproject	",
+	"mongoUri": "mongodb+srv://oino:12345qwert@cluster0.h2eaj.mongodb.net/app?retryWrites=true&w=majority"
 }
