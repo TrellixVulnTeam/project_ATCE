@@ -1,0 +1,20 @@
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	height: 70px;
+	width: 70px;
+}
+
+.zone-1 {
+	border: 1px solid gray;
+	margin: 15px;
+	height: 100px;
+}
+.zone-2 {
+	margin: 15px;
+	border: 1px solid gray;
+	height: 100px;
+}
