@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import s from './Home.module.scss'
 import PostList from '../Posts/PostsList'
+import ButtonNext from '../UI/Buttons/ButtonNext'
+import ButtonPrev from '../UI/Buttons/ButtonPrev'
+
+
+
 
 export default class Home extends Component {
 
@@ -28,6 +33,10 @@ export default class Home extends Component {
         this.renderMedia(this.state.currentSubreddit)
     }
 
+
+
+    // !Наполняем state из .JSON --------------start------------
+
     renderMedia(sub) {
 
         this.setState({
@@ -47,10 +56,26 @@ export default class Home extends Component {
                 window.scroll(0, 0)
             })
     }
+    // !Наполняем state из .JSON --------------end------------
+    // *
+    // *
+    // *
+    // * 
+    // * 
+    // *
+    // !Следующая страница--------------start------------
+    clickButtonNextHandler = () => {
 
+    }
 
-
-
+    // !Следующая страница--------------end------------
+    // *
+    // *
+    // *
+    // * 
+    // * 
+    // *
+    // !Рендер контента --------------start------------
     render() {
 
 
@@ -60,9 +85,15 @@ export default class Home extends Component {
         } else contentMedia = <div className={s.noMedia}>Loading posts</div>
 
         return (
-            <main className={s.Posts} >
-                {contentMedia}
-            </main >
+            <React.Fragment>
+                <main  >
+                    {contentMedia}
+                </main >
+                <div className={s.HomeButton}>
+                    <ButtonPrev />
+                    <ButtonNext />
+                </div>
+            </React.Fragment >
         )
     }
 }
